@@ -177,14 +177,15 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <!-- <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div> -->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div> -->
+        
                     <div class="modal-body">
                         <div class="form">
-                            <h3>اتصل بنا</h3>
-                            <form method="POST" action="https://api.bassamelabassy.me/services.php">
+                            <h3>أرسل لنا فكرتك لتبدء قصتك</h3>
+                            <form method="POST" action="https://api.bassamelabassy.me/index.php">
                                 <div class="form-row">
                                     <div class="col-md-6 col-sm-12">
                                         <label for="name">الإسم</label>
@@ -200,32 +201,30 @@
                                         <label for="phone">رقم التواصل</label>
                                         <div class="input-group ">
                                             <span class=" input-group-text" id="basic-addon1">+</span>
-                                            <input type="text" name="phone" class=" form-control border-end-0"
-                                                id="phone" required>
+                                            <input type="text" name="phone" class=" form-control border-end-0" id="phone"
+                                                required>
                                         </div>
-                                        <!-- 
-
-                                              
-                                         -->
-                                        <input type="text" name="phone" class="border-0 contactNumber" id="phone"
-                                            required>
+                                        <input type="text" name="phone" class="border-0 contactNumber" id="phone" required>
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <label for="address">البلد</label>
-                                        <div class="dropdown w-100" id="dropdown">
-                                            <button class="btn btn-primary dropdown-toggle w-100 " type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                مصر
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li lass="dropdown-item"></li>
-                                            </ul>
-                                        </div>
+                                        <select class="custom-select mr-sm-2" name="service" id="service" required>
+                                            <option value="برمجة وحلول تقنية">مصر</option>
+                                            <option value="تصميم الجرافيك"> السعوديه</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="col">
-                                        <label for="service">الخدمة</label>
+                                    <div class="col-md-6 col-sm-12">
+                                        <label for="service">نوع الخدمه</label>
+                                        <select class="custom-select mr-sm-2" name="service" id="service" required>
+                                            <option value="برمجة وحلول تقنية">برمجة وحلول تقنية</option>
+                                            <option value="تصميم الجرافيك">تصميم الجرافيك</option>
+                                            <option value="تسويق الكتروني">تسويق الكتروني</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <label for="service"> الخدمه</label>
                                         <select class="custom-select mr-sm-2" name="service" id="service" required>
                                             <option value="برمجة وحلول تقنية">برمجة وحلول تقنية</option>
                                             <option value="تصميم الجرافيك">تصميم الجرافيك</option>
@@ -235,9 +234,22 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
-                                        <label for="message">الرسالة</label>
-                                        <textarea class="form-control" name="message" rows="8" id="message"
-                                            required></textarea>
+                                        <div class="d-flex mt-3 p-2">
+                                            <span class="ml-2 input-group-text" id="basic-addon1">+</span>
+                                            <p class="mt-2 mb-0">اضافه خدمه اخري</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <label for="message">
+                                            
+                                            
+                                            الرسالة
+                                                                        <span style="    color: #c3c2c2;">(اختياري)</span>
+
+                                        </label>
+                                        <textarea class="form-control" name="message" rows="8" id="message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -247,10 +259,11 @@
                             </form>
                         </div>
                     </div>
-
+        
                 </div>
             </div>
-        </div> <!--end form modal-->
+        </div>
+        <!--end form modal-->
         <!--end services section-->
         <!--start project-steps section-->
         <section class="project-steps">
