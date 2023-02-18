@@ -1,12 +1,12 @@
 /* 
--Enable light mode and dark mode  //
--loading // 
--edit scroll down  >> done 
+-Enable light mode and dark mode  ////
+-loading ////
+-edit scroll down  >> done ////
 -call + whatsapp  
 -select text doing  highlight in main color  /// 
 
 
-
+- share link page with navigate by social media 
 
 -enable lang AR  //
 -create new page ==> (job ) --> 

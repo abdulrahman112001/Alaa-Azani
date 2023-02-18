@@ -1,4 +1,6 @@
-/*TODO: TypeWriting animation*/
+
+
+
   let dark = document.querySelector(".moon");
 
   if (localStorage.getItem("darkMode") === null) {
@@ -22,6 +24,73 @@
       : localStorage.setItem("darkMode", "true");
     checkState();
   };
+
+
+/**
+ * 
+ *  data-period="300"
+                                    data-type='["!لإحداث تغيير ؟!", " لإمتلاك مشروعك ؟!" ," لتحقيق حلمك ؟!", " لتبدء قصتك ؟"]'>
+ * 
+ */
+
+
+
+const text = document.getElementById("text")
+let prog
+let isRewrite = false
+let idx = 20
+let iText = 0
+let isWroteText = true
+let words = ["We Love Programming!", "Freelancer"]
+
+setInterval(validateStateText, 150)
+async function validateStateText() {
+  if (iText == words.length) {
+    iText = 0
+  }
+  if (!isWroteText) {
+    if (isRewrite) {
+      if (idx > prog.length) idx = 0
+      writeText(0)
+    } else {
+      if (idx < 0) idx = prog.length
+      delText(prog.length)
+    }
+  } else {
+    prog = words[iText]
+    isWroteText = false
+  }
+}
+
+function writeText() {
+  text.innerText = prog.slice(0, idx) + "|"
+  idx++
+
+  if (idx > prog.length) {
+    isRewrite = false
+  }
+}
+
+function delText() {
+  text.innerText = prog.slice(0, idx) + "|"
+  idx--
+
+  if (idx <= 0) {
+    iText++
+    isRewrite = true
+    isWroteText = true
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 var menuButton = $(".menu-button"),
   menuTop,
