@@ -41,6 +41,15 @@ background-color: #18191a;
 .dark .partner{
     background-color: #1c1e20;
 }
+.dark span {
+    color: white;
+}
+.dark  i {
+    color: white;
+}
+.dark  h4 {
+    color: white;
+}
 .dark .footer{
     background-color: #18191a;
 }
