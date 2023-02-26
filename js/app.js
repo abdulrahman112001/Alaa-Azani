@@ -1,7 +1,8 @@
 
 
-
+  let logo = document.getElementById("logo")
   let dark = document.querySelector(".moon");
+  console.log(logo)
 
   if (localStorage.getItem("darkMode") === null) {
     localStorage.setItem("darkMode", "false");
@@ -11,9 +12,12 @@
     if (localStorage.getItem("darkMode") === "true") {
       document.body.classList.add("dark");
       dark.src = "imgs/sun.png";
+      logo.src='imgs/logo-dark.png'
     } else {
       document.body.classList.remove("dark");
       dark.src = "imgs/moon.png";
+      logo.src='imgs/logo final.png'
+
     }
   }
   checkState();
@@ -278,7 +282,7 @@ let swiper = new Swiper(".mySwiper", {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
   navigation: {
