@@ -29,7 +29,20 @@
     checkState();
   };
 
-
+  $(document).ready(() => {
+    let topBtn = $(".btn-top");
+  
+    topBtn.hide();
+  
+    $(window).scroll(() => {
+      $(this).scrollTop() >= 700 ? topBtn.fadeIn() : topBtn.fadeOut();
+    });
+  
+    topBtn.click(() => {
+      $("html , body").animate({ scrollTop: 0 }, 100);
+    });
+  });
+  
 /**
  * 
  *  data-period="300"
@@ -234,19 +247,6 @@ window.onload = function () {
 
 /*TODO: scroll top*/
 
-$(document).ready(() => {
-  let topBtn = $(".btn-top");
-
-  topBtn.hide();
-
-  $(window).scroll(() => {
-    $(this).scrollTop() >= 700 ? topBtn.fadeIn() : topBtn.fadeOut();
-  });
-
-  topBtn.click(() => {
-    $("html , body").animate({ scrollTop: 0 }, 100);
-  });
-});
 
 /*TODO: toggle dashboard sections */
 let lis = document.querySelectorAll(".dashboard .right-side ul li");

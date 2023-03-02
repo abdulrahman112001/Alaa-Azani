@@ -47,9 +47,9 @@ background-color: #18191a;
 .dark  i {
     color: white;
 }
-.dark  h4, .dark h5 {
+ /* .dark h5 {
     color: white;
-}
+} */
 .dark .footer{
     background-color: #101010;
 }
@@ -64,4 +64,7 @@ background-color: #18191a;
 }
 .dark label{
     color: white;
+}
+.dark .dataSocial span{
+       color: black !important;                 
 }
