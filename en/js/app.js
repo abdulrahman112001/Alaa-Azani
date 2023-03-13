@@ -9,6 +9,7 @@ let TxtType = function (el, toRotate, period) {
   this.isDeleting = false;
 };
 
+
 TxtType.prototype.tick = function () {
   let i = this.loopNum % this.toRotate.length;
   let fullTxt = this.toRotate[i];
@@ -159,6 +160,7 @@ let swiper2 = new Swiper(".mySwiper2", {
     clickable: true,
   },
 });
+
 
 
 /*TODO: init AOS animation  */
