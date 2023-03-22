@@ -359,7 +359,7 @@
             <div class="container text-center" data-aos="zoom-in" data-aos-duration="2000">
                 <h2>أعمالنا</h2>
                 <!-- Swiper -->
-                <div class="swiper mySwiper gallery" id="gallery">
+                <div class="swiper mySwiper7 gallery" id="gallery">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="gallery-card sites">
@@ -380,7 +380,63 @@
                                 </div>
                             </div>
                         </div>
-                      
+                        <div class="swiper-slide">
+                            <div class="gallery-card sites">
+                                <div class="">
+                                    <div class="galleryCard-head">
+                                        <p class="p-1 m-0">تكافل العربيه</p>
+                                    </div>
+                                    <div class="image">
+
+                                        <img src="imgs/web-design.png" alt="gallery-1" class="img-fluid">
+                                        <div class="overlay">
+                                            <a href="sites.html">للتفاصيل </a>
+                                        </div>
+                                    </div>
+                                    <div class="galleryCard-footer">
+                                        <p class="p-1 m-0">موقع الكتروني</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-card sites">
+                                <div class="">
+                                    <div class="galleryCard-head">
+                                        <p class="p-1 m-0">تكافل العربيه</p>
+                                    </div>
+                                    <div class="image">
+
+                                        <img src="imgs/web-design.png" alt="gallery-1" class="img-fluid">
+                                        <div class="overlay">
+                                            <a href="sites.html">للتفاصيل </a>
+                                        </div>
+                                    </div>
+                                    <div class="galleryCard-footer">
+                                        <p class="p-1 m-0">موقع الكتروني</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-card sites">
+                                <div class="">
+                                    <div class="galleryCard-head">
+                                        <p class="p-1 m-0">تكافل العربيه</p>
+                                    </div>
+                                    <div class="image">
+
+                                        <img src="imgs/web-design.png" alt="gallery-1" class="img-fluid">
+                                        <div class="overlay">
+                                            <a href="sites.html">للتفاصيل </a>
+                                        </div>
+                                    </div>
+                                    <div class="galleryCard-footer">
+                                        <p class="p-1 m-0">موقع الكتروني</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -998,6 +1054,35 @@ let swiper5 = new Swiper(".mySwiper5", {
 });
 
 let swiper6 = new Swiper(".mySwiper6", {
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+let swiper7 = new Swiper(".mySwiper7", {
   spaceBetween: 30,
   autoplay: {
     delay: 2500,
