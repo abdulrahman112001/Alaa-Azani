@@ -1,67 +1,67 @@
-body.dark  {
-background-color: #18191a;
+body.dark {
+  background-color: #18191a;
 }
 
-.dark .navbar{
-    background-color: #010f19;
+.dark .navbar {
+  background-color: #010f19;
 }
 
-
-.dark .navbar .nav-link{
-    color: #fff;
+.dark .navbar .nav-link {
+  color: #fff;
 }
-.dark .main svg{
-    fill: #18191a;
+.dark .main svg {
+  fill: #18191a;
 }
 .dark p {
-    color: white;
+  color: white;
 }
-.dark .card{
-    background-color: #242526;
+.dark .card {
+  background-color: #242526;
 }
-.dark .services .card ul li{
-    color: white;
+.dark .services .card ul li {
+  color: white;
 }
-.dark .why-us{
-    background-color: #1c1e20;
+.dark .why-us {
+  background-color: #1c1e20;
 }
-.dark .galleryCard-head, .dark .galleryCard-footer{
-    background-color:#2a2d30;
+.dark .galleryCard-head,
+.dark .galleryCard-footer {
+  background-color: #2a2d30;
 }
-.dark .works .swiper .swiper-slide{
-        background-color: #1c1e20;
-
+.dark .works .swiper .swiper-slide {
+  background-color: #1c1e20;
 }
-.dark .testimonials .swiper .card p{
-    color: white;
+.dark .testimonials .swiper .card p {
+  color: white;
 }
-.dark .testimonials{
-    background-color: #1c1e20;
+.dark .testimonials {
+  background-color: #1c1e20;
 }
-.dark .partner{
-    background-color: #1c1e20;
+.dark .partner {
+  background-color: #1c1e20;
 }
 .dark span {
-    color: white;
+  color: white;
 }
-.dark  i {
-    color: white;
+.dark i {
+  color: white;
 }
-.dark  h4, .dark h5 {
-    color: white;
+.dark h4,
+.dark h5 {
+  color: white;
 }
-.dark .footer{
-    background-color: #101010;
+.dark .footer {
+  background-color: #101010;
 }
-.dark .about .goals .col-lg-4{
-    background-color: #242526;
+.dark .about .goals .col-lg-4 {
+  background-color: #242526;
 }
 .dark .footer .copyright ul.social span {
-    background-color:#101010 ;
+  background-color: #101010;
 }
 .dark .blogcontent .content .text {
-    background-color: #242526;
+  background-color: #242526;
 }
-.dark label{
-    color: white;
+.dark label {
+  color: white;
 }
